@@ -1,8 +1,8 @@
 // Cambio immagini di sfondo
 const backgrounds = [
-  'images/bg1.jpg',
-  'images/bg2.jpg',
-  'images/bg3.jpg'
+  'bg1.jpg',
+  'bg2.jpg',
+  'bg3.jpg'
 ];
 let currentBg = 0;
 
