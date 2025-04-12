@@ -1,4 +1,3 @@
-// Cambio immagini di sfondo (temi SCP)
 const backgrounds = [
   'bg1.jpg',
   'bg2.jpg',
