@@ -1,4 +1,4 @@
-// Cambio immagini di sfondo
+// Cambio immagini di sfondo (temi SCP)
 const backgrounds = [
   'bg1.jpg',
   'bg2.jpg',
@@ -10,15 +10,15 @@ function changeBackground() {
   currentBg = (currentBg + 1) % backgrounds.length;
   document.getElementById('background').style.backgroundImage = `url('${backgrounds[currentBg]}')`;
 }
-setInterval(changeBackground, 8000);
+setInterval(changeBackground, 10000);
 
-// Testo di caricamento dinamico
+// Testo di caricamento (a tema SCP)
 const loadingPhrases = [
-  "Caricamento mappa...",
-  "Caricamento modelli...",
-  "Caricamento NPC...",
-  "Connessione al database...",
-  "Quasi pronto!"
+  "> Caricamento mappa: Settore-██...",
+  "> Verifica credenziali...",
+  "> Avvio sistemi di contenimento...",
+  "> Connessione a Database Sicuro...",
+  "> Accesso autorizzato. Benvenuto, Dott. █████."
 ];
 let currentPhrase = 0;
 
@@ -26,4 +26,4 @@ function updateLoadingText() {
   document.getElementById('loading-text').textContent = loadingPhrases[currentPhrase];
   currentPhrase = (currentPhrase + 1) % loadingPhrases.length;
 }
-setInterval(updateLoadingText, 3000);
+setInterval(updateLoadingText, 3500);
