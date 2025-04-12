@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Loading Screen | Futuristic GMod Server</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Loading Screen | SCP GMod Server</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Sfondo dinamico -->
-    <div id="background"></div>
+  <!-- Sfondo dinamico -->
+  <div id="background"></div>
 
-    <!-- Sezione Staff (Sinistra) -->
-    <div class="column left">
-        <div class="staff-box">
-            <h2>OWNER</h2>
-            <img src="owner_avatar.png" alt="Owner">
-            <p>NomeOwner</p>
-        </div>
-        <div class="staff-box">
-            <h2>HEAD ADMIN</h2>
-            <img src="admin_avatar.jpg" alt="Head Admin">
-            <p>NomeAdmin</p>
-        </div>
+  <!-- Sezione Staff (Sinistra) -->
+  <div class="column left">
+    <div class="staff-box">
+      <h2>👑 OWNER</h2>
+      <img src="images/owner_avatar.png" alt="O5 Council">
+      <p></p>
+      <p></p>
     </div>
-
-    <!-- Sezione Caricamento (Centro) -->
-    <div class="column center">
-        <div class="spinner"></div>
-        <div id="loading-text">Inizializzazione...</div>
+    <div class="staff-box">
+      <h2>⚔️ HEAD ADMIN</h2>
+      <img src="images/admin_avatar.png" alt="MTF Leader">
+      <p></p>
+      <p></p>
     </div>
+  </div>
 
-    <!-- Sezione Regole (Destra) -->
-    <div class="column right">
-        <h2>REGOLE FONDAMENTALI</h2>
-        <ul>
-            <li>✅ No RDM / DM</li>
-            <li>✅ No Propblock</li>
-            <li>✅ No Cheat/Exploit</li>
-            <li>✅ Rispetto verso Staff e Player</li>
-            <li>✅ No Spam Mic/Chat</li>
-            <li>✅ Seguire le indicazioni degli Admin</li>
-        </ul>
+  <!-- Sezione Caricamento + Lore (Centro) -->
+  <div class="column center">
+    <div class="spinner"></div>
+    <div id="loading-text"> >Inizializzazione sistema di contenimento...</div>
+
+    <!-- Lore Sito-19 -->
+    <div class="lore-box">
+      <h3>📜 NEXUS GAMING - AREA-74</h3>
+      <p>
+        ██/██/████: l'Area-74 è una struttura di Livello-5 situata in ████████, L'Area-74 è un sito di ricerca avanzata, contenimento e sviluppo tecnologico della Fondazione SCP, classificato come
+        livello 5 in quanto a segretezza. Costruita nel 2006 sui resti di un vecchio impianto militare sovietico abbandonato,
+        l'Area-74 si è evoluta in uno dei centri più all’avanguardia per lo studio e la gestione di anomalie catastrofiche,
+        cognitohazard e tecnologie non terrestri.
+
+        
+        A differenza dei classici Siti della Fondazione, l'Area-74 non si concentra solamente sul contenimento, ma anche
+        sull'applicazione attiva delle anomalie per scopi █████, █████ e ██████████..<br><br>
+        
+        ▶  SCP contenuti: 14 (<font color="red">4 Keter</font>, <font color="yellow">7 Euclid</font>, 3 Safe). <br><br>
+        
+                
+        ▶ Unità assegnate: <font color="blue">MTF Nu-7 "Hammerdown".</font>
+      </p>
     </div>
+  </div>
 
-    <!-- Musica (autoplay disabilitato per policy browser) -->
-    <audio id="bgMusic" loop>
-        <source src="audio/background_music.mp3" type="audio/mpeg">
-    </audio>
-    <button id="musicBtn" onclick="document.getElementById('bgMusic').play()">▶️ Play Music</button>
+  <!-- Sezione Regole (Destra) -->
+  <div class="column right">
+    <h2>⛔ REGOLE DI GIOCO</h2>
+    <ul>
+      <li>> No RDM/ Random Death Match.</li><br>
+      <li>> Nessuna breccia previa autorizzazione</li><br>
+      <li>> Rispetto tra Staff e Player</li><br>
+      <li>> Seguire gli ordini dei superiori</li><br>
+      <li>> No FailRP</li><br>
+      <li>> Per approfondimenti leggere il regolamento su discord.</li> 
+    </ul>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Musica e pulsante -->
+  <audio id="bgMusic" loop>
+    <source src="audio/scp_ambient.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicBtn" onclick="document.getElementById('bgMusic').play()">▶️ ATTIVA AUDIO</button>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
