@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading Screen | Futuristic GMod Server</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sfondo dinamico -->
+    <div id="background"></div>
+
+    <!-- Sezione Staff (Sinistra) -->
+    <div class="column left">
+        <div class="staff-box">
+            <h2>OWNER</h2>
+            <img src="images/owner_avatar.png" alt="Owner">
+            <p>NomeOwner</p>
+        </div>
+        <div class="staff-box">
+            <h2>HEAD ADMIN</h2>
+            <img src="images/admin_avatar.png" alt="Head Admin">
+            <p>NomeAdmin</p>
+        </div>
+    </div>
+
+    <!-- Sezione Caricamento (Centro) -->
+    <div class="column center">
+        <div class="spinner"></div>
+        <div id="loading-text">Inizializzazione...</div>
+    </div>
+
+    <!-- Sezione Regole (Destra) -->
+    <div class="column right">
+        <h2>REGOLE FONDAMENTALI</h2>
+        <ul>
+            <li>✅ No RDM / DM</li>
+            <li>✅ No Propblock</li>
+            <li>✅ No Cheat/Exploit</li>
+            <li>✅ Rispetto verso Staff e Player</li>
+            <li>✅ No Spam Mic/Chat</li>
+            <li>✅ Seguire le indicazioni degli Admin</li>
+        </ul>
+    </div>
+
+    <!-- Musica (autoplay disabilitato per policy browser) -->
+    <audio id="bgMusic" loop>
+        <source src="audio/background_music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicBtn" onclick="document.getElementById('bgMusic').play()">▶️ Play Music</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
